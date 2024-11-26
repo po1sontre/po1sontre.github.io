@@ -1,0 +1,265 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  background-color: #121212;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Background Video */
+#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.5);
+}
+
+/* Profile Container */
+.profile-container {
+  width: 90%;
+  max-width: 500px;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.9);
+  animation: fadeInUp 1.2s forwards 0.3s ease-out;
+  overflow: hidden;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #f33030; /* Border color to match your theme */
+  object-fit: cover; /* Ensures the image is contained and does not stretch */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 50, 50, 0.8);
+}
+
+.name {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(to right, #f33030, #ff6f61);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 2px 10px rgba(255, 50, 50, 0.8), 0 2px 15px rgba(255, 50, 50, 0.6);
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.name:hover {
+  transform: scale(1.1);
+  text-shadow: 0 2px 20px rgba(255, 50, 50, 0.9), 0 2px 25px rgba(255, 50, 50, 0.7);
+}
+
+.pronouns, .aliases {
+  font-size: 16px;
+  color: #aaa;
+}
+
+.status-text {
+  font-size: 16px;
+  color: #bbb;
+  background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+  padding: 6px 12px;
+  margin-top: 20px;
+  border-radius: 15px;
+  display: inline-block;
+  text-transform: capitalize;
+  font-weight: normal;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for status-text */
+.status-text.inactive:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+
+.status-text.active:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #fff;
+}
+
+.status-text.inactive {
+  background: rgba(255, 0, 0, 0.2); /* Light red for inactive status */
+  border-color: rgba(255, 0, 0, 0.4);
+  color: #ff3333;
+}
+
+/* Active (or any different status) */
+.status-text.active {
+  background: rgba(11, 63, 233, 0.2); /* Light green for active status */
+  border-color: rgba(74, 119, 216, 0.4);
+  color: #686bff;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+  text-shadow: 0 0 6px #f33030;
+}
+
+.social-icon:hover {
+  color: #ff0000;
+  transform: scale(1.2);
+  animation: glow 1s infinite alternate;
+}
+
+/* Glow Animation */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #f33030, 0 0 10px #ff9191, 0 0 15px #ff7171;
+  }
+  100% {
+    text-shadow: 0 0 10px #f33030, 0 0 20px #ff7171, 0 0 30px #ffa4a4;
+  }
+}
+
+/* Music Player */
+.music-container {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+}
+
+.play-pause-btn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-right: 20px;
+}
+
+.play-pause-btn:hover {
+  transform: scale(1.2);
+}
+
+.progress-bar {
+  flex: 1;
+  height: 6px;
+  margin: 0 10px;
+  background: #444;
+  border-radius: 10px;
+  appearance: none;
+}
+
+.progress-bar::-webkit-slider-thumb {
+  background: #f39c12;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Slide-in from the top */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Zoom-in effect */
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* General animation classes */
+.animate-fade {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-slide-top {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.animate-zoom {
+  animation: zoomIn 1s ease-out forwards;
+}
+
+/* Add delays for a cascading effect */
+.animate-delay-1 {
+  animation-delay: 0.3s;
+}
+
+.animate-delay-2 {
+  animation-delay: 0.6s;
+}
+
+.animate-delay-3 {
+  animation-delay: 0.9s;
+}

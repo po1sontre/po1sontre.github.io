@@ -1,142 +1,67 @@
-<!DOCTYPE html><html lang="en-US" data-theme="dark"><head>
-<title>poison tree</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="format-detection" content="telephone=no">
-<!-- -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@">
-<meta property="og:title" content="poison tree">
-<meta property="og:description" content="do good things and good things will happen to you mate">
-<!-- -->
-<link rel="stylesheet" href="css/styles.css" type="text/css">
-<link rel="stylesheet" href="css/APlayer.css">
-
-<script src="js/jquery.min.js" type="e45d0e82039563ff64f497b3-text/javascript"></script> 
-<script src="js/typed.min.js" type="e45d0e82039563ff64f497b3-text/javascript"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Po1sontre Bio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body oncontextmenu="if (!window.__cfRLUnblockHandlers) return false; return false;" data-cf-modified-e45d0e82039563ff64f497b3-="">
-<header class="full-page" id="page-header">
-<div id="animatedbackground">
-<video class="vidbox" autoplay="" loop="" muted="" src="media/kaneki-one-eye-tokyo-ghoul-moewalls-com(1).mp4" type="video/mp4"></video>
-<div class="overlay"></div>
-</div>
-<nav id="nav" class="show">
-<span class="site-name">
-<a href="/">po1son tree</a>
-</span>
-</nav>
-<div id="mini-feed">
-<h1 id="site-title">Welcome!</h1>
-<div id="site-sub">
-<span id="subtitle"></span>
-<span class="st-cursor typed-cursor--blink" aria-hidden="true"></span>
-</div>
-</div>
-<div id="scroll-down">
-<i class="fas fa-angle-down scroll-down-effects"></i>
-</div>
-</header>
-<div class="page" id="body-wrap">
-<main class="layout" id="content-inner">
-<div id="recent-posts">
+<body>
+  <!-- Background Video -->
+  <video autoplay muted loop id="background-video">
+    <source src="assets/background.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-<div class="recent-post-item" style="height: 23.3em;">
-<div class="recent-post-info" style="width: 100%;">
-<a class="article-title" title="About me" style="cursor: default;">About me</a>
-<div class="article-meta-wrap">
-<span class="post-mega-date"><i class="far fa-calendar-alt"></i></span>
-<span class="article-meta-label">Published on</span>
-<time datetime="0">17 • 4 • 2024</time>
-</div>
-<div class="content">hi im po1sontre, i like to play, code and learning new things i also love music and much more i cant think of rn</div>
-<p>favourite sites for evrything, enjoy</p>
-<blockquote>
-<div class="vtsocials">
-<div id="vticon" title="anime n1">
-<a href="https://hianime.to/" target="_blank">
-<img src="images/hianime-apk-thumbnail.png"></a>
-</div>
-<div id="vticon" title="anime n2">
-<a href="https://aniwave.to/" target="_blank">
-<img src="images/512x512bb.jpg"></a>
-</div>
-<div id="vticon" title="movies">
-<a href="https://ww4.fmovies.co/24/" target="_blank">
-<img src="images/icon.png"></a>
-</div>
-<div id="vticon" title="genshin skins">
-<a href="https://gamebanana.com/" target="_blank">
-<img src="images/4eaf0b8c34057.png"></a>
-</div>
-<div id="vticon" title="password manager">
-<a href="https://bitwarden.com/" target="_blank">
-<img src="images/apps.9628.15bced16-76b6-40f0-b229-b0fa0f565ba8.a4bafbe6-7354-4f8f-b022-5bd405f680f1.png"></a>
-</div>
-</div>
-</blockquote>
-</div>
-</div>
-</div>
-<div class="aside-content" id="aside-content">
-<div class="card-widget card-info">
-<div class="is-center">
-<div class="avatar-img"><img src="images/s.jpg" alt="avatar" class="entered loaded"></div>
-<div class="author-info__name">po1sontre</div>
-<div class="author-info__description">An unknown life form</div>
-</div>
-<input id="copied-success" type="text" value="ahykono" style="display: none;">
-<a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://discord.com/users/701821831132217426"><i class="fab fa-discord"></i><span id="discord-tag">Discord</span></a>
-</div>
-<div class="sticky-layout">
-<div class="card-widget card-webinfo">
-<div class="item-headline">
-<i class="fas fa-chart-line"></i>
-<span>Statistics</span>
-</div>
-<div class="webinfo">
-<div class="webinfo-item">
-<div class="item-name">Visitors</div>
-<div class="item-count" id="busuanzi_value_site_uv"></div>
-</div>
-<div class="webinfo-item">
-<div class="item-name">Total</div>
-<div class="item-count" id="busuanzi_value_site_pv"></div>
-</div>
-<div class="webinfo-item">
-<div class="item-name">Last updated</div>
-<div class="item-count" id="last-push-date"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</main>
-<footer id="footer">
-<div id="footer-wrap">
-<div class="copyright">•</div>
-<div class="description">In the snow, it is known that spring is coming, and cold plums are embellished with Sakura flowers.</div>
-</div>
-<div id="aplayer"></div>
-</footer>
-</div>
-<div id="fallmenu" style="">
-<div id="hide">
-<button id="theme" type="button" title="Light and dark mode transitions"><i class="fas fa-adjust"></i></button>
-<button id="hide-col" type="button" title="Toggle between single and double columns"><i class="fas fa-arrows-alt-h"></i></button>
-</div>
-<div id="show">
-<button id="cogwheel" type="button" title="set up"><i class="fas fa-cog fa-spin"></i></button>
-<button id="go-up" type="button" title="back to the top"><i class="fas fa-arrow-up"></i></button>
-</div>
-</div>
-<div>
-<script src="js/index.js" type="e45d0e82039563ff64f497b3-text/javascript">subtitle();</script>
-<script src="js/busuanzi.pure.mini.js" type="e45d0e82039563ff64f497b3-text/javascript"></script>
-<script src="js/APlayer.min.js" type="e45d0e82039563ff64f497b3-text/javascript"></script>
-<script src="js/canvas-ribbon.min.js" defer="defer" id="ribbon" size="150" alpha="0.6" zindex="-1" mobile="false" data-click="false" type="e45d0e82039563ff64f497b3-text/javascript"></script>
+<!-- Profile Container -->
+<div class="profile-container">
+  <div class="profile-header">
+    <img src="assets/pfp.gif" alt="Profile Picture" class="profile-pic animate-zoom animate-delay-1">
+    <div class="profile-info">
+      <h1 class="name animate-slide-top animate-delay-2">Po1sontre</h1>
+      <p class="pronouns animate-fade animate-delay-3">he/him | 18</p>
+      <p class="aliases animate-fade animate-delay-3">Aliases: rot | kait</p>
+    </div>
+  </div>
+  <div class="social-links animate-fade animate-delay-2">
+    <a href="https://discord.com/users/701821831132217426" target="_blank" class="social-icon">
+      <i class="fab fa-discord"></i>
+    </a>
+    <a href="https://open.spotify.com/user/31bb64trrbwinip6q743jyi32tmu?si=a75fcdf76d4545b0" target="_blank" class="social-icon">
+      <i class="fab fa-spotify"></i>
+    </a>
+    <a href="https://github.com/po1sontre" target="_blank" class="social-icon">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.youtube.com/@po1sontre" target="_blank" class="social-icon">
+      <i class="fab fa-youtube"></i>
+    </a>
+  </div>
+  <div class="status-container animate-slide-top animate-delay-3">
+    <div class="status-text active">Busy</div>
+    <div class="status-text inactive">Meaw</div>
+  </div>
 </div>
 
-<script src="js/rocket-loader.min.js" data-cf-settings="e45d0e82039563ff64f497b3-|49" defer=""></script>
-</body></html>
+
+
+  <!-- Music Player -->
+  <div class="music-container">
+    <button class="play-pause-btn" aria-label="Play/Pause">
+      <span class="play-icon">▶</span>
+      <span class="pause-icon" style="display:none;">❚❚</span>
+    </button>
+    <div class="song-info">
+      <div class="song-title">hold on</div>
+      <div class="song-artist">by final</div>
+    </div>
+    <input type="range" class="progress-bar" min="0" max="100" value="0" aria-label="Progress">
+    <button class="volume-btn" aria-label="Toggle Volume">☣</button>
+  </div>
+
+  <audio id="audio" src="assets/song1.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
