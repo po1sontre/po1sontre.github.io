@@ -150,6 +150,21 @@ body {
   animation: glow 1s infinite alternate;
 }
 
+.footer {
+  position: fixed;        /* Fixed at the bottom */
+  bottom: 5px;           /* 10px from the bottom of the page */
+  left: 50%;              /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for true centering */
+  font-size: 12px;        /* Small font size */
+  color: rgba(255, 255, 255, 0.5); /* White text with 50% transparency */
+  font-family: Arial, sans-serif;
+}
+
+.footer p {
+  margin: 0;
+  padding: 0;
+}
+
 /* Glow Animation */
 @keyframes glow {
   0% {
@@ -171,7 +186,7 @@ body {
   display: flex;
   align-items: center;
   position: fixed;
-  bottom: 20px;
+  bottom: 25px;
 }
 
 .play-pause-btn {
