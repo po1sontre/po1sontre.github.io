@@ -10,58 +10,67 @@
 <body>
   <!-- Background Video -->
   <video autoplay muted loop id="background-video">
-    <source src="assets/background.mp4" type="video/mp4">
+    <source src="assets/background2.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
-<!-- Profile Container -->
-<div class="profile-container">
-  <div class="profile-header">
-    <img src="assets/pfp.jpg" alt="Profile Picture" class="profile-pic animate-zoom animate-delay-1">
-    <div class="profile-info">
-      <h1 class="name animate-slide-top animate-delay-2">Po1sontre</h1>
-      <p class="pronouns animate-fade animate-delay-3">any/prn | 18</p>
-      <p class="aliases animate-fade animate-delay-3">Aliases: rot | kait</p>
+  <!-- Profile Container -->
+  <div class="profile-container">
+    <div class="profile-header">
+      <img src="assets/pfp.jpg" alt="Profile Picture" class="profile-pic animate-zoom animate-delay-1">
+      <div class="profile-info">
+        <h1 class="name animate-slide-top animate-delay-2">Po1sontre</h1>
+        <p class="pronouns animate-fade animate-delay-3">any/prn | 18</p>
+        <p class="aliases animate-fade animate-delay-3">Aliases: rot | kait</p>
+      </div>
+    </div>
+    <div class="social-links animate-fade animate-delay-2">
+      <a href="https://discord.com/users/701821831132217426" target="_blank" class="social-icon">
+        <i class="fab fa-discord"></i>
+      </a>
+      <a href="https://open.spotify.com/user/31bb64trrbwinip6q743jyi32tmu?si=a75fcdf76d4545b0" target="_blank" class="social-icon">
+        <i class="fab fa-spotify"></i>
+      </a>
+      <a href="https://github.com/po1sontre" target="_blank" class="social-icon">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.youtube.com/@po1sontre" target="_blank" class="social-icon">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+    <div class="status-container animate-slide-top animate-delay-3">
+      <div class="status-text active">Busy</div>
+      <div class="status-text inactive">Meaw</div>
     </div>
   </div>
-  <div class="social-links animate-fade animate-delay-2">
-    <a href="https://discord.com/users/701821831132217426" target="_blank" class="social-icon">
-      <i class="fab fa-discord"></i>
-    </a>
-    <a href="https://open.spotify.com/user/31bb64trrbwinip6q743jyi32tmu?si=a75fcdf76d4545b0" target="_blank" class="social-icon">
-      <i class="fab fa-spotify"></i>
-    </a>
-    <a href="https://github.com/po1sontre" target="_blank" class="social-icon">
-      <i class="fab fa-github"></i>
-    </a>
-    <a href="https://www.youtube.com/@po1sontre" target="_blank" class="social-icon">
-      <i class="fab fa-youtube"></i>
-    </a>
-  </div>
-  <div class="status-container animate-slide-top animate-delay-3">
-    <div class="status-text active">Busy</div>
-    <div class="status-text inactive">Meaw</div>
-  </div>
-</div>
-
-
 
   <!-- Music Player -->
   <div class="music-container">
+    <!-- Play/Pause Button with Font Awesome Icons -->
     <button class="play-pause-btn" aria-label="Play/Pause">
-      <span class="play-icon">▶</span>
-      <span class="pause-icon" style="display:none;">❚❚</span>
+      <i class="play-icon fas fa-play"></i>
+      <i class="pause-icon fas fa-pause" style="display:none;"></i>
     </button>
+
+    <!-- Song Info -->
     <div class="song-info">
       <div class="song-title">hold on</div>
       <div class="song-artist">by final</div>
     </div>
+
+    <!-- Progress Bar -->
     <input type="range" class="progress-bar" min="0" max="100" value="0" aria-label="Progress">
-    <button class="volume-btn" aria-label="Toggle Volume">☣</button>
+
+    <!-- Mute Button with Font Awesome Icon -->
+    <button class="mute-btn" aria-label="Toggle Volume" id="mute-btn">
+      <i class="fas fa-volume-mute" id="volume-icon"></i>
+    </button>
   </div>
 
+  <!-- Audio Element -->
   <audio id="audio" src="assets/song1.mp3"></audio>
 
+  <!-- Footer -->
   <div class="footer">
     <p>by po1sontre ♡</p>
   </div>
