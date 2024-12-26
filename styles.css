@@ -1,12 +1,12 @@
 :root {
   --bg: #0a0a0a;
   --card: #0d0d0d;
-  --accent: #ff6b6b;
-  --accent-glow: rgba(255, 107, 107, 0.4);
+  --accent: #678fff;
+  --accent-glow: rgba(41, 0, 189, 0.4);
   --text: #ffffff;
   --text-dim: #a0a0a0;
   --border-color: rgba(255, 255, 255, 0.1);
-  --hover-accent: #ff8585;
+  --hover-accent: #7e75fd;
 }
 
 * {
@@ -43,10 +43,10 @@ body {
   width: 200%;
   height: 200%;
   background: linear-gradient(-45deg, 
-    rgba(255, 107, 107, 0.1),
-    rgba(255, 87, 87, 0.1),
-    rgba(255, 133, 133, 0.1),
-    rgba(255, 157, 157, 0.1)
+    rgba(56, 15, 240, 0.1),
+    rgba(95, 55, 240, 0.1),
+    rgba(30, 26, 255, 0.1),
+    rgba(38, 0, 141, 0.1)
   );
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
@@ -59,7 +59,7 @@ body {
   height: 100%;
   background: radial-gradient(
     circle at 50% 50%,
-    rgba(255, 107, 107, 0.15),
+    rgba(50, 28, 255, 0.15),
     transparent 70%
   );
   animation: pulse 4s ease infinite;
