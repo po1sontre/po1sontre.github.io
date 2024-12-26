@@ -53,3 +53,8 @@ muteBtn.addEventListener('click', toggleMute);
 window.addEventListener('load', () => {
   document.body.classList.add('page-loaded');
 });
+
+document.querySelector('.card-container').addEventListener('click', function () {
+  this.classList.toggle('flipped');
+});
+
